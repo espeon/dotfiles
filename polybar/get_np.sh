@@ -30,7 +30,6 @@ if [ "$1" == "--status" ]; then
         fi;
 else
     if [ "$STATUS" = "Stopped" ]; then
-    echo "stoppped"
         echo $(whoami)@$(hostname)
     elif [ "$STATUS" = "Paused"  ]; then
         if [ $FILE_CONTENTS -lt $TIMESTAMP ]; then
